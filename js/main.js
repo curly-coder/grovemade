@@ -26,6 +26,13 @@ $(".owl-carousel").owlCarousel({
     }
 });
 
+$('#btn-up').on("click", function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 400);
+    return false;
+  });
+
 
 let menuBtn = document.querySelector('.menu-btn');
 let menu = document.querySelector('.menu');
