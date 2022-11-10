@@ -1,4 +1,4 @@
-  body {
+ body {
     font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
@@ -213,14 +213,191 @@
     color: #A0A0A0;
   }
   /* end products */
+  /* start inspirations */
+  .inspiration{
+    background: url(../img/bg-lapt.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 181px 0;
+  }
+  .home-office{
+    text-align: center;
+  }
+  .office-title{
+    font-weight: 400;
+    font-size: 66px;
+    line-height: 70px;
+    color: #fff;
+  }
+  .office-desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    margin: 10px 0 20px;
+    color: #FFFFFF;
+  }
+  /* end inspirations */
+  /* start way */
+  .way{
+    padding: 115px 0 35px;
+  }
+  .way-img{
+    margin: 0 auto;
+  }
+  .way-title{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .way-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+    max-width: 770px;
+    margin: 22px auto;
+    text-align: center  ;
+  }
+  /* end way */
+  /* start work  */
+  .work-title{
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .work{
+    padding-bottom: 120px;
+  }
+  .work-desc{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #A0A0A0;
+    max-width: 789px;
+    margin: 22px auto 78px;
+  }
+  .join-title{
+    margin: 80px 0 28px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 36px;
+  }
+  .join-desc{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+  /* end work */
+  /* start insp */
+  .inspires{
+    padding: 120px 0;
+    background: #9AA8B1;
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+  .logo-insp{
+    margin: 0 auto;
+  }
+  .insp-title{
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 58px;
+    text-align: center;
+    color: #ffff;
+    margin: 22px 0;
+  }
+  .insp-desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #fff;
+    margin: 0 auto;
+  }
+  /* end insp*/
+  /* start footer */
+  .footer{
+    padding: 80px 0 10px;
+  }
+  .footer-menu-item{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 20px;
+    text-decoration: none;
+    display: block;
+    margin-top: 12px;
+  }
+  .signup-title{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    margin-top: 12px;
+  }
+  .btn-up{
+    cursor: pointer;
+  }
+  .signup-desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #A0A0A0;
+    max-width: 348px;
+    margin: 20px 0 30px;
+  }
+  .form-control{
+    border: none !important;
+    border-radius: 0% !important;
+    border-bottom: 1px solid #000 !important;
+    max-width: 320px;
+  }
+  /* end footer */
   /* start adaptive */
   @media (max-width:992px) {
     .header-hidden{
         display: block;
         padding: 26px 0;
     }
+    .inspires{
+      padding: 70px 0;
+      max-width: 700px;
+    }
+    .insp-desc{
+      line-height: 20px;
+    }
+    .insp-title{
+      line-height: 40px;
+    }
+    .work-desc{
+      margin: 22px auto 31px;
+    }
+    .work{
+      padding-bottom: 50px;
+    }
+    .inspiration{
+      padding: 100px 0;
+    }
+    .office-title{
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 50px;
+      color: #fff;
+    }
+    .way {
+      padding: 60px 0 35px;
+  }
     .card-img{
-      height: 30vh;
+      height: 40vh;
     }
     .menu-btn{
         justify-content: flex-end;
@@ -242,11 +419,27 @@
     .menu-list-hidden a:hover{
         color: gray;
     }
+    .signup-desc{
+      margin: 18px 0 0;
+    }
+    .footer-menu-item{
+      font-size: 20px;
+    }
+    .footer {
+      padding: 35px 0 18px;
+  }
   }
   @media (max-width:768px) {
     .hero{
         padding: 140px 0 100px;
         margin-top: -45px;
+    }
+    
+    .inspires{
+      padding: 50px 0 ;
+    }
+    .join-title {
+      margin: 42px 0 20px;
     }
     .card-img{
       height: 40vh;
@@ -277,8 +470,53 @@
     .design{
         padding: 30px 0 40px;
     }
+    .btn-up{
+      display: none;
+    }
+    .logo-insp {
+      width: 35px;
+  }
+    .inspires {
+      padding: 36px 0;
+      max-width: 382px;
+  }
+  .insp-title {
+    line-height: 20px;
+    font-size: 30px;
+}
+.insp-desc {
+  line-height: 16px;
+  font-size: 12px;
+}
+    .join-title {
+      margin: 16px 0 10px;
+      font-size: 28px;
+  }
+  .work{
+    padding-bottom: 24px;
+  }
+    .way{
+      padding: 40px 0 35px;
+    }
+    .way-title{
+      font-size: 28px;
+      line-height: 20px;
+    }
+    .way-desc{
+      font-size: 12px;
+    }
+    .office-desc{
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .office-title{
+      font-size: 28px;
+    }
+    .inspiration{
+      padding: 80px 0;
+    }
     .card-img{
-      height: 35vh;
+      height: 40vh;
     }
     .products-title{
       font-size: 25px;
@@ -320,7 +558,53 @@
     .hero{
         padding: 50px 0 50px;
     }
-    
+    .footer-menu-item {
+      font-size: 18px;
+  }
+    .inspires {
+      padding: 18px 0;
+      max-width: 355px;
+  }
+  .insp-title {
+    line-height: 10px;
+}
+    .join-desc {
+      font-size: 12px;
+      line-height: 12px;
+      letter-spacing: 0.5px;
+  }
+    .join-title {
+      margin: 25px 0 12px;
+      font-size: 25px;
+      line-height: 20px;
+    }
+    .work-desc {
+      margin: 12px auto 18px;
+      font-size: 13px;
+      line-height: 18px;
+    }
+    .work{
+      padding-bottom: 20px;
+    }
+    .work-title {
+      font-size: 22px;
+      line-height: 20px;
+    }
+    .office-title{
+      line-height: 25px;
+      font-size: 22px;
+    }
+    .way-desc{
+      line-height: 15px;
+      margin: 14px auto;
+    }
+    .way-title{
+      font-size: 24px;
+    line-height: 15px;
+    }
+    .inspiration{
+      padding: 30px 0;
+    }
     .hero-title{
         font-size: 20px;
         line-height: 20px;
@@ -334,6 +618,39 @@
     .logo{
         width: 100px;
     }
+    .footer-menu-item {
+      font-size: 14px;
+      line-height: 24px;
+  }
+  .signup-title{
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .signup-desc{
+    font-size: 12px;
+    line-height: 16px;
+  }
+    .inspires {
+      padding: 10px 0;
+      max-width: 263px;
+  }
+  .insp-title {
+    line-height: 5px;
+    font-size: 25px;
+  }
+  .logo-insp {
+    width: 30px;
+} 
+    .join-title {
+      margin: 8px 0 12px;
+      font-size: 20px;
+      line-height: 15px;
+  }
+  .join-desc {
+    font-size: 11px;
+    line-height: 8px;
+    letter-spacing: 0.3px;
+}
     .desk-title-marg{
         margin-top: -10px;
         line-height: 15px;
@@ -341,6 +658,20 @@
     .desk-link-marg{
         line-height: 10px;
         margin-top: -10px;
+    }
+    .inspiration{
+      padding: 50px 0;
+    }
+    .office-title{
+      font-weight: 400;
+      line-height: 30px;
+      color: #fff;
+    }
+    .office-desc{
+      font-size: 12px;
+    }
+    .office-link{
+      font-size: 12px;
     }
   }
   @media (max-width:200px) {
@@ -359,6 +690,9 @@
     .desk-link{
         line-height: 15px;
     }
+    .way {
+      padding: 24px 0 24px;
+  }
   }
 /* для адаптива меню */
 /* Гамбургер иконка */
